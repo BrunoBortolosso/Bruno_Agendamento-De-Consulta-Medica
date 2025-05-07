@@ -1,11 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Agendamento de Consulta</title>
+  <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+
+  <div class="container">
+    <h1>Agendar Consulta Médica</h1>
     
+    <form class="formulario">
+      <div class="campo">
+        <label for="nome">Nome do Paciente:</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+
+      <div class="campo">
+        <label for="especialidade">Especialidade:</label>
+        <select id="especialidade" name="especialidade" required>
+          <option value="">Selecione...</option>
+          <option>Clínico Geral</option>
+          <option>Cardiologista</option>
+          <option>Dermatologista</option>
+          <option>Ginecologista</option>
+          <option>Pediatra</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="data">Data da Consulta:</label>
+        <input type="date" id="data" name="data" required>
+      </div>
+
+      <div class="campo">
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" required>
+      </div>
+
+      <div class="botao-container">
+        <button type="submit">Agendar Consulta</button>
+      </div>
+    </form>
+  </div>
+
 </body>
 </html>
